@@ -1,3 +1,7 @@
+mod prepare_data;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(e) = prepare_data::print_data() {
+        eprint!("Error {}", e);
+    }
 }
