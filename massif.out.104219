@@ -1,0 +1,846 @@
+desc: (none)
+cmd: ./target/release/data-ingestion
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3141581567
+mem_heap_B=10073
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=5672101788
+mem_heap_B=10015
+mem_heap_extra_B=97
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=8002531333
+mem_heap_B=10015
+mem_heap_extra_B=97
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=11157839697
+mem_heap_B=11037
+mem_heap_extra_B=275
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=13694202100
+mem_heap_B=10731
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=15320586212
+mem_heap_B=10522
+mem_heap_extra_B=78
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=17456859758
+mem_heap_B=10841
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=20758333387
+mem_heap_B=10457
+mem_heap_extra_B=79
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=22894594858
+mem_heap_B=10499
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=26286727665
+mem_heap_B=10437
+mem_heap_extra_B=75
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=29053673300
+mem_heap_B=10520
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=32512374845
+mem_heap_B=10643
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=35088240004
+mem_heap_B=11863
+mem_heap_extra_B=289
+mem_stacks_B=0
+heap_tree=detailed
+n6: 11863 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n3: 1431 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 587 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 587 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 587 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 587 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 587 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 587 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 587 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 587 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 520 0x118101: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 520 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 520 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 520 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 520 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 520 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 520 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 520 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 324 in 9 places, all below massif's threshold (1.00%)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 192 0x110E61: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 192 0x128F60: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 192 0x112A38: <serde_core::de::impls::<impl serde_core::de::Deserialize for alloc::vec::Vec<T>>::deserialize::VecVisitor<T> as serde_core::de::Visitor>::visit_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 192 0x11748F: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 192 0x1183E0: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 192 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 192 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 0 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=36817581446
+mem_heap_B=10286
+mem_heap_extra_B=58
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=38892810712
+mem_heap_B=10809
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=40968016458
+mem_heap_B=10470
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=43148396705
+mem_heap_B=10807
+mem_heap_extra_B=129
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=46418945415
+mem_heap_B=10561
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=48054212714
+mem_heap_B=11002
+mem_heap_extra_B=238
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11002 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n3: 666 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 255 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 255 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 255 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 255 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 255 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 255 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 255 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 255 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 223 in 9 places, all below massif's threshold (1.00%)
+  n1: 188 0x118101: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 188 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 188 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 188 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 188 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 188 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 188 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 188 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 96 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=50234570758
+mem_heap_B=10371
+mem_heap_extra_B=77
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=53505105865
+mem_heap_B=10589
+mem_heap_extra_B=123
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10589 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n2: 349 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 213 in 10 places, all below massif's threshold (1.00%)
+  n1: 136 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 136 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 136 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 136 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 136 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 136 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 136 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 136 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 0 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=55685457775
+mem_heap_B=10286
+mem_heap_extra_B=58
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=57865805156
+mem_heap_B=10685
+mem_heap_extra_B=147
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=60591252861
+mem_heap_B=10747
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=62771601054
+mem_heap_B=10459
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=64406869418
+mem_heap_B=10559
+mem_heap_extra_B=121
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10559 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n2: 319 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 199 in 10 places, all below massif's threshold (1.00%)
+  n1: 120 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 120 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 120 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 120 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 120 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 120 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 120 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 120 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 0 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=66587240201
+mem_heap_B=10465
+mem_heap_extra_B=79
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=68222500521
+mem_heap_B=10572
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=70402858809
+mem_heap_B=10851
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=73673388619
+mem_heap_B=10525
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=75853736720
+mem_heap_B=10575
+mem_heap_extra_B=105
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=78034097646
+mem_heap_B=10549
+mem_heap_extra_B=115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=81304636220
+mem_heap_B=10709
+mem_heap_extra_B=115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=83484984184
+mem_heap_B=10723
+mem_heap_extra_B=141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=85665331003
+mem_heap_B=10789
+mem_heap_extra_B=139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=88186507165
+mem_heap_B=12465
+mem_heap_extra_B=311
+mem_stacks_B=0
+heap_tree=detailed
+n6: 12465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n3: 2033 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 942 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 942 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 942 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 942 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 942 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 942 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 942 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 942 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 875 0x118101: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 875 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 875 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 875 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 875 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 875 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 875 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 875 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 216 in 9 places, all below massif's threshold (1.00%)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 192 0x110E61: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 192 0x128F60: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 192 0x112A38: <serde_core::de::impls::<impl serde_core::de::Deserialize for alloc::vec::Vec<T>>::deserialize::VecVisitor<T> as serde_core::de::Visitor>::visit_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 192 0x11748F: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 192 0x1183E0: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 192 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 192 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 0 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=91457030453
+mem_heap_B=10655
+mem_heap_extra_B=121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=93637381927
+mem_heap_B=10558
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=95817728630
+mem_heap_B=10510
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=97998080395
+mem_heap_B=10488
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=100178428270
+mem_heap_B=10286
+mem_heap_extra_B=58
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=102358782661
+mem_heap_B=10855
+mem_heap_extra_B=113
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=105629303104
+mem_heap_B=11016
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=108899825174
+mem_heap_B=10730
+mem_heap_extra_B=190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=111080183546
+mem_heap_B=10677
+mem_heap_extra_B=115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=114350706856
+mem_heap_B=10374
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=116531057069
+mem_heap_B=10727
+mem_heap_extra_B=113
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=118711406854
+mem_heap_B=10721
+mem_heap_extra_B=175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=120891754228
+mem_heap_B=10362
+mem_heap_extra_B=70
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10362 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 1024 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 1024 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 122 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 122 in 11 places, all below massif's threshold (1.00%)
+ n0: 0 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=122518139451
+mem_heap_B=10935
+mem_heap_extra_B=265
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=124144526037
+mem_heap_B=10440
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=125770911798
+mem_heap_B=10587
+mem_heap_extra_B=133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=127397298273
+mem_heap_B=10409
+mem_heap_extra_B=71
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=129023682410
+mem_heap_B=10451
+mem_heap_extra_B=133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=130650078562
+mem_heap_B=10719
+mem_heap_extra_B=121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=132276465950
+mem_heap_B=10717
+mem_heap_extra_B=123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=133902851658
+mem_heap_B=10574
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=135529247344
+mem_heap_B=10627
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=136761526574
+mem_heap_B=14044
+mem_heap_extra_B=300
+mem_stacks_B=0
+heap_tree=peak
+n6: 14044 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x113301: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 8192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 8192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 8192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 8192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n0: 8192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n3: 2588 0x117766: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1213 0x117F14: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1213 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1213 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1213 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1213 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1213 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1213 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 1213 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1146 0x118101: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1146 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1146 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1146 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1146 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1146 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1146 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n0: 1146 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n0: 229 in 9 places, all below massif's threshold (1.00%)
+ n1: 2048 0x111D81: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 2048 0x1560FF: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 2048 0x113F73: <serde_json::read::IoRead<R> as serde_json::read::Read>::parse_str (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n2: 2048 0x117719: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_string (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 2048 0x118101: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 2048 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 2048 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 2048 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 2048 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 2048 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 2048 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 2048 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x13DB31: std::sync::poison::once::Once::call_once_force::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 1024 0x111793: std::sys::sync::once::futex::Once::call (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 1024 0x111211: std::sync::once_lock::OnceLock<T>::initialize (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 1024 0x13B1A3: std::io::stdio::_print (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 1024 0x113551: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 1024 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 1024 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 1024 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 1024 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n0: 1024 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n1: 192 0x110E61: alloc::raw_vec::finish_grow (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+  n1: 192 0x128F60: alloc::raw_vec::RawVec<T,A>::grow_one (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+   n1: 192 0x112A38: <serde_core::de::impls::<impl serde_core::de::Deserialize for alloc::vec::Vec<T>>::deserialize::VecVisitor<T> as serde_core::de::Visitor>::visit_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+    n1: 192 0x11748F: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_seq (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+     n1: 192 0x1183E0: <&mut serde_json::de::Deserializer<R> as serde_core::de::Deserializer>::deserialize_struct (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+      n1: 192 0x1142C5: <serde_json::de::StreamDeserializer<R,T> as core::iter::traits::iterator::Iterator>::next (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+       n1: 192 0x1133D9: data_ingestion::prepare_data::print_data (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+        n1: 192 0x11276A: data_ingestion::main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+         n1: 192 0x1126C2: std::sys::backtrace::__rust_begin_short_backtrace (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+          n1: 192 0x1126B8: std::rt::lang_start::{{closure}} (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+           n1: 192 0x138AB3: std::rt::lang_start_internal (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+            n0: 192 0x112874: main (in /media/rizki/LEARN2/PORTOFOLIO/RSE/data-ingestion/target/release/data-ingestion)
+ n0: 0 in 9 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=138387911056
+mem_heap_B=11750
+mem_heap_extra_B=258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=140014296561
+mem_heap_B=11396
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty

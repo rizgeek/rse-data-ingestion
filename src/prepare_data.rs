@@ -1,63 +1,36 @@
-use std::{fs::File, io::BufReader};
-use serde::Deserialize;
-use serde_json::{Error, Value};
-
-#[derive(Debug, Deserialize)]
-#[allow(dead_code)]
-struct ProductData {
-    asin: String,
-    product_id: String,
-    name: String,
-    img_url: String,
-    product_url: String,
-    stars: f32,
-    reviews: i64,
-    price: Option<f64>,
-    list_price: Option<f64>,
-    is_best_seller: Option<i8>,
-    bought_in_last_month: Option<i64>,
-    description: String,
-    stock: i64,
-    brand: String,
-    category_ml: String,
-    creation_date: Option<String>,
-    last_updated: String,
-    search_tags: Vec<String>,
-}
+use std::{fs::File, io::{BufReader}};
+use serde_json::Deserializer;
+use crate::odt::ProductData;
 
 
-fn buffer_reader_from_file(path: String)-> Result<BufReader<File>, std::io::Error> {
+const DEFAULT_BUF_SIZE: usize = 8 * 1024;
+
+fn make_reader(path: &str, capacity: usize)-> Result<BufReader<File>, std::io::Error> {
     let file = File::open(path)?;
-    let reader = BufReader::new(file);
+    let reader = BufReader::with_capacity(capacity, file);
 
     Ok(reader)
 }
 
-fn deserialze_json_from_reader(reader: BufReader<File>) -> Result<Value, serde_json::Error> {
-    let value: Value = serde_json::from_reader(reader)?;
-    Ok(value)
+fn read_ndjson (reader: BufReader<File>) -> impl Iterator<Item = Result<ProductData, serde_json::Error>> {
+    let stream = Deserializer::from_reader(reader).into_iter::<ProductData>();
+    stream
 }
 
-fn parse_product(item: Value) -> Result<ProductData, Error> {
-    serde_json::from_value::<ProductData>(item)
+fn display_products(product: &ProductData) {
+    println!("{:?}", product)
 }
 
-fn display_products(products: &[ProductData]) {
-    for product in products {
-        println!("{:?}", product)
-    }
-}
+pub fn print_data(path: &str) -> Result<(), Box<dyn std::error::Error>> {
+    let reader = make_reader(path, DEFAULT_BUF_SIZE)?;
+    let stream = read_ndjson(reader);
+    
 
-pub fn print_data() -> Result<(), Box<dyn std::error::Error>> {
-    let reader = buffer_reader_from_file("sample_augmented_product.json".to_string())?;
-    let value = deserialze_json_from_reader(reader)?;
-
-    if let Value::Array(items) = value {
-        let products: Result<Vec<ProductData>, Error> = items.into_iter()
-            .map(parse_product)
-            .collect();
-
-        display_products(&products?);
+    for (i, value) in stream.enumerate() {
+        match value {
+            Ok(product) => display_products(&product),
+            Err(e) => eprintln!("Error di baris {}: {:?}", i + 1, e),
+        }
     }
 
     Ok(())
