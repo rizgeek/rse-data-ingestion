@@ -10,7 +10,7 @@ fn buffer_reader_from_file(path: String, capacity: usize)-> Result<BufReader<Fil
     Ok(reader)
 }
 
-fn deserialze_json_from_reader(reader: BufReader<File>) -> Result<Value, serde_json::Error> {
+fn deserialize_json_from_reader(reader: BufReader<File>) -> Result<Value, serde_json::Error> {
     let value: Value = serde_json::from_reader(reader)?;
     Ok(value)
 }
