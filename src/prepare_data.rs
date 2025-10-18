@@ -3,9 +3,9 @@ use serde_json::{Error, Value};
 use crate::odt::ProductData;
 
 
-fn buffer_reader_from_file(path: String)-> Result<BufReader<File>, std::io::Error> {
+fn buffer_reader_from_file(path: String, capacity: usize)-> Result<BufReader<File>, std::io::Error> {
     let file = File::open(path)?;
-    let reader = BufReader::new(file);
+    let reader = BufReader::with_capacity(capacity, file);
 
     Ok(reader)
 }
@@ -26,7 +26,7 @@ fn display_products(products: &[ProductData]) {
 }
 
 pub fn print_data() -> Result<(), Box<dyn std::error::Error>> {
-    let reader = buffer_reader_from_file("sample_augmented_product.json".to_string())?;
+    let reader = buffer_reader_from_file("sample_augmented_product.json".to_string(), 8 * 1024)?;
     let value = deserialze_json_from_reader(reader)?;
 
     if let Value::Array(items) = value {
