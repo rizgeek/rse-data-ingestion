@@ -1,29 +1,6 @@
 use std::{fs::File, io::BufReader};
-use serde::Deserialize;
 use serde_json::{Error, Value};
-
-#[derive(Debug, Deserialize)]
-#[allow(dead_code)]
-struct ProductData {
-    asin: String,
-    product_id: String,
-    name: String,
-    img_url: String,
-    product_url: String,
-    stars: f32,
-    reviews: i64,
-    price: Option<f64>,
-    list_price: Option<f64>,
-    is_best_seller: Option<i8>,
-    bought_in_last_month: Option<i64>,
-    description: String,
-    stock: i64,
-    brand: String,
-    category_ml: String,
-    creation_date: Option<String>,
-    last_updated: String,
-    search_tags: Vec<String>,
-}
+use crate::odt::ProductData;
 
 
 fn buffer_reader_from_file(path: String)-> Result<BufReader<File>, std::io::Error> {
