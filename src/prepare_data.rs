@@ -27,7 +27,7 @@ fn display_products(products: &[ProductData]) {
 
 pub fn print_data() -> Result<(), Box<dyn std::error::Error>> {
     let reader = buffer_reader_from_file("sample_augmented_product.json".to_string(), 8 * 1024)?;
-    let value = deserialze_json_from_reader(reader)?;
+    let value = deserialize_json_from_reader(reader)?;
 
     if let Value::Array(items) = value {
         let products: Result<Vec<ProductData>, Error> = items.into_iter()
